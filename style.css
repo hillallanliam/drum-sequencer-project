@@ -1,0 +1,170 @@
+/* General Styles */
+
+html {
+    background-image: url('/images/wood_desk_texture.jpg');
+    background-size: cover;
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 300;
+    font-style: normal;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.drumMachine {
+    width: 800px;
+    height: auto;
+    border-radius: 12px;
+    background-color: #e2d9dc;
+    padding: 24px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+h1 {
+    color: #E37858;
+    font-size: 20px;
+    margin-right: 24px;
+}
+
+/* Sequencer Styles */
+
+.sequencer {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin: 0px auto;
+}
+
+.drumLineLabel {
+    overflow: hidden;
+    height: 36px;
+    aspect-ratio: 1/1;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(-12px);
+}
+
+.drumLineContainer {
+    display: flex;
+}
+
+.drumLineNumbers {
+    margin-left: 36px;
+}
+
+.drumLine {
+    display: flex;
+    gap: 12px;
+}
+
+.sequencerNumber {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #E37858;
+    width: 36px;
+}
+
+.drumElement {
+    height: 36px;
+    aspect-ratio: 1/1;
+    background-color:  #837e80;
+    border-radius: 6px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    cursor: pointer;
+}
+
+/* Functional Styles */
+
+.activated {
+    background-color: rgb(236, 240, 12);
+}
+
+.currentStep {
+    outline: 3px solid #06c00f !important;
+}
+
+/* Controls Container Styles */
+
+.controlsContainer {
+    display: flex;
+    margin-bottom: 12px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* BPM Slider Styles */
+
+#bpmSlider {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 300px;
+    background-color: #cfc8ca;
+}
+
+#bpmSlider::-webkit-slider-runnable-track {
+    background-color: black;
+    height: 3px;
+    border-radius: 6px;
+}
+
+#bpmSlider::-webkit-slider-thumb {
+    appearance: none;
+    -webkit-appearance: none;
+    background-color: #837e80;
+    width: 24px;
+    height: 24px;
+    margin: -10px; /* alignment fix for Chrome */
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    cursor: pointer;
+    border-radius: 6px;
+    transform: translateX(10px);
+}
+
+#bpmSlider::-ms-thumb {
+    margin: 0; /* Reset margin in Edge since it supports -webkit-slider-thumb as well */
+}
+
+#bpmLabel {
+    margin-left: auto;
+    font-weight: 200;
+    margin-right: 12px;
+}
+
+/* Start and Reset Button Styles */
+
+#startButton,  #resetButton {
+    border: none;
+    width: 60px;
+    background-color: #837e80;
+    color: white;
+    font-weight: 200;
+    font-size: 12px;
+    padding: 6px 12px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    cursor: pointer;
+    border-radius: 6px;
+    margin-right: 12px;
+    text-align: center;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.startSequence {
+    background-color: #06c00f !important;
+}

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drum Machine 🎛️</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="drumMachine">
+
+    
+
+    <div class="controlsContainer">
+    <h1>// DRUM SEQUENCER //</h1>
+    <button id="startButton">START</button>
+    <button id="resetButton" class="deactivated">RESET</button>
+    <label id="bpmLabel" for="bpmSlider">BPM</label>
+    <input type="range" min="60" max="180" value="120" id="bpmSlider">
+    </div> 
+
+    <div class="sequencer">
+
+        <div class="drumLine drumLineNumbers">
+            <div class="sequencerNumber">1</div>
+            <div class="sequencerNumber">2</div>
+            <div class="sequencerNumber">3</div>
+            <div class="sequencerNumber">4</div>
+            <div class="sequencerNumber">5</div>
+            <div class="sequencerNumber">6</div>
+            <div class="sequencerNumber">7</div>
+            <div class="sequencerNumber">8</div>
+            <div class="sequencerNumber">9</div>
+            <div class="sequencerNumber">10</div>
+            <div class="sequencerNumber">11</div>
+            <div class="sequencerNumber">12</div>
+            <div class="sequencerNumber">13</div>
+            <div class="sequencerNumber">14</div>
+            <div class="sequencerNumber">15</div>
+            <div class="sequencerNumber">16</div>
+        </div>
+        
+        <div class="drumLineContainer">
+            <div class="drumLineLabel">Kick</div>
+            <div class="drumLine kick">
+                <div class="drumElement"></div>
+                <div class="drumElement"></div>
+                <div class="drumElement"></div>
+                <div class="drumElement"></div>
+                <div class="drumElement"></div> 
+                <div class="drumElement"></div>
+                <div class="drumElement"></div>
+                <div class="drumElement"></div>
+                <div class="drumElement"></div>
+                <div class="drumElement"></div>
+                <div class="drumElement"></div>
+                <div class="drumElement"></div>
+                <div class="drumElement"></div>
+                <div class="drumElement"></div>
+                <div class="drumElement"></div>
+                <div class="drumElement"></div>
+            </div>
+        </div>
+
+    <div class="drumLineContainer">
+        <div class="drumLineLabel">Snare</div>   
+        <div class="drumLine snare">
+            <div class="drumElement"></div>
+            <div class="drumElement"></div>
+            <div class="drumElement"></div>
+            <div class="drumElement"></div>
+            <div class="drumElement"></div>
+            <div class="drumElement"></div>
+            <div class="drumElement"></div>
+            <div class="drumElement"></div>
+            <div class="drumElement"></div>
+            <div class="drumElement"></div>
+            <div class="drumElement"></div>
+            <div class="drumElement"></div>
+            <div class="drumElement"></div>
+            <div class="drumElement"></div>
+            <div class="drumElement"></div>
+            <div class="drumElement"></div>
+        </div>
+    </div>
+
+    <div class="drumLineContainer">
+        <div class="drumLineLabel">Clap</div>   
+        <div class="drumLine clap">
+            <div class="drumElement"></div>
+            <div class="drumElement"></div>
+            <div class="drumElement"></div>
+            <div class="drumElement"></div>
+            <div class="drumElement"></div>
+            <div class="drumElement"></div>
+            <div class="drumElement"></div>
+            <div class="drumElement"></div>
+            <div class="drumElement"></div>
+            <div class="drumElement"></div>
+            <div class="drumElement"></div>
+            <div class="drumElement"></div>
+            <div class="drumElement"></div>
+            <div class="drumElement"></div>
+            <div class="drumElement"></div>
+            <div class="drumElement"></div>
+        </div>
+    </div>
+
+    <div class="drumLineContainer">
+        <div class="drumLineLabel">Hat</div>
+        <div class="drumLine hiHat">
+            <div class="drumElement"></div>
+            <div class="drumElement"></div>
+            <div class="drumElement"></div>
+            <div class="drumElement"></div>
+            <div class="drumElement"></div>
+            <div class="drumElement"></div>
+            <div class="drumElement"></div>
+            <div class="drumElement"></div>
+            <div class="drumElement"></div>
+            <div class="drumElement"></div>
+            <div class="drumElement"></div>
+            <div class="drumElement"></div>
+            <div class="drumElement"></div>
+            <div class="drumElement"></div>
+            <div class="drumElement"></div>
+            <div class="drumElement"></div>
+        </div>
+    </div>
+
+    <div class="drumLineContainer">
+        <div class="drumLineLabel">Crash</div>
+        <div class="drumLine crash">
+            <div class="drumElement"></div>
+            <div class="drumElement"></div>
+            <div class="drumElement"></div>
+            <div class="drumElement"></div>
+            <div class="drumElement"></div>
+            <div class="drumElement"></div>
+            <div class="drumElement"></div>
+            <div class="drumElement"></div>
+            <div class="drumElement"></div>
+            <div class="drumElement"></div>
+            <div class="drumElement"></div>
+            <div class="drumElement"></div>
+            <div class="drumElement"></div>
+            <div class="drumElement"></div>
+            <div class="drumElement"></div>
+            <div class="drumElement"></div>
+        </div>
+    </div>
+
+</div>
+
+</div>
+
+</body>
+</html>
